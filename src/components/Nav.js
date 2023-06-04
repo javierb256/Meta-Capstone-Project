@@ -1,31 +1,44 @@
 import Logo from '../assets/Logo .svg'
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from "../pages/Home"
+import Reserve from "../pages/Reserve"
 
 function Nav(){
     return (
-        <nav>
+        <>
+        
+        <nav className='navbar'>
+            <Link to="/">
             <img src={Logo} alt="Logo with yellow lemon"></img>
-            <ul>
+            </Link>
+            <ul className='navbar-links'> 
                 <li>
-                    <a href='/'>Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a href='/'>About</a>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <a href='/'>Menu</a>
+                    <Link href='/'>Menu</Link>
                 </li>
                 <li>
-                    <a href='/'>Reservations</a>
+                    <Link to="/reservations">Reservations</Link>
                 </li>
                 <li>
-                    <a href='/'>Order Online</a>
+                    <Link href='/'>Order Online</Link>
                 </li>
                 <li>
-                    <a href='/'>Log In</a>
+                    <Link href='/'>Log In</Link>
                 </li>
                    
             </ul>
         </nav>
+        <Routes>
+            <Route path="/home" element ={<Home />}/>
+            <Route path="/reservations" element ={<Reserve />}/>
+            
+        </Routes>
+        </>
     )
 }
 

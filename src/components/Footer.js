@@ -1,10 +1,11 @@
-import Logo from '../assets/green logo.png'
+import Logo from '../assets/green logo 2.png'
+// import { Route, Routes, Link } from 'react-router-dom';
 function Footer() {
     return (
-        <footer>
+        <footer className='footer'>
             <img src={Logo} alt='green and white logo'></img>
             <div>
-                <h3>Doormat Navigation</h3>
+                <h3 className='section-title'>Doormat Navigation</h3>
                 <ul>
                     <li><a href='/'>Home</a></li>
                     <li><a href='/'>About</a></li>
