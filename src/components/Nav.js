@@ -1,45 +1,67 @@
-import Logo from '../assets/Logo .svg'
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from "../pages/Home"
-import Reserve from "../pages/Reserve"
+import Logo from "../assets/Logo .svg";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "../pages/Home";
+import Reserve from "../pages/Reserve";
+import { useState } from "react";
 
-function Nav(){
-    return (
-        <>
-        
-        <nav className='navbar'>
-            <Link to="/">
-            <img src={Logo} alt="Logo with yellow lemon"></img>
-            </Link>
-            <ul className='navbar-links'> 
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link href='/'>Menu</Link>
-                </li>
-                <li>
-                    <Link to="/reservations">Reservations</Link>
-                </li>
-                <li>
-                    <Link href='/'>Order Online</Link>
-                </li>
-                <li>
-                    <Link href='/'>Log In</Link>
-                </li>
-                   
-            </ul>
+function Nav() {
+  const [isActive, setActive] = useState(false);
+  const toggleName = () => {
+    setActive(!isActive);
+  };
+  return (
+    <>
+      <nav className="navbar">
+        <Link to="/">
+          <img src={Logo} alt="Logo with yellow lemon"></img>
+        </Link>
+        <ul className="navbar-links">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/">Menu</Link>
+          </li>
+          <li>
+            <Link to="/reservations">Reservations</Link>
+          </li>
+          <li>
+            <Link href="/">Order Online</Link>
+          </li>
+          <li>
+            <Link href="/">Log In</Link>
+          </li>
+        </ul>
+      </nav>
+      <div className="navbar-mobile">
+        <div className="navbar-mobile top">
+          <button
+            className={isActive ? "hamburger is-active" : "hamburger"}
+            onClick={toggleName}
+          >
+            <div className="bar"></div>
+          </button>
+          <img src={Logo} alt="Logo with yellow lemon"/>
+        </div>
+        <nav className={isActive ? "navbar-menu is-active" : "navbar-menu"}>
+          <Link to="/" onClick={toggleName}>Home</Link>
+          <Link to="/about" onClick={toggleName}>About</Link>
+          <Link href="/" onClick={toggleName}>Menu</Link>
+          <Link to="/reservations" onClick={toggleName}>Reservations</Link>
+          <Link href="/" onClick={toggleName}>Order Online</Link>
+          <Link href="/" onClick={toggleName}>Log In</Link>
         </nav>
-        <Routes>
-            <Route path="/home" element ={<Home />}/>
-            <Route path="/reservations" element ={<Reserve />}/>
-            
-        </Routes>
-        </>
-    )
+      </div>
+ 
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/reservations" element={<Reserve />} />
+      </Routes>
+    </>
+  );
 }
 
 export default Nav;
