@@ -62,12 +62,15 @@ body {
 }
 
 h2 {
-  font-size: 64px;
+  font-family: var(--font-family-markazi);
+  font-weight: var(--font-weight-semi-bold);
+  font-size: 4rem;
+  text-align: center;
 }
 
 h3 {
   font-family: var(--font-family-karla);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-semi-bold);
   font-size: 2rem;
 }
 
@@ -78,6 +81,10 @@ p {
 button {
   font-family: var(--font-family-karla);
   font-weight: var(--font-weight-extra-bold);
+}
+
+section {
+  margin-top: 10rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;600;700&display=swap");
@@ -173,6 +180,22 @@ button {
   font-weight: var(--font-weight-bold);
 }
 
+
+
+/* Card Component */
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--highlight-anti-white);
+  max-width: 300px;
+}
+
+
+
+
+/* Card Component */
+
 /* Main Header */
 header {
   background-color: var(--primary-green);
@@ -199,6 +222,7 @@ header {
 .header-info h2 {
   color: var(--primary-yellow);
   margin-bottom: -8px;
+  text-align: left;
 }
 
 .header-info h3 {
@@ -237,7 +261,6 @@ header {
   background: url(./assets/restauranfood.jpg) no-repeat center / cover;
   border-radius: 20px;
   margin-bottom: -160px;
-  background-color: yellow;
 }
 
 /* Main Header */
@@ -245,15 +268,18 @@ header {
 /* Specials */
 
 .specials {
-  margin-top: 10rem;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.specials-container {
+.specials-title {
   display: flex;
   justify-content: space-between;
+}
+
+.specials-image {
+  max-height: 200px;
 }
 
 .specials button {
@@ -274,7 +300,99 @@ header {
   background-color: var(--secondary-tangerince);
 }
 
+.specials-cards {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 3rem;
+}
+
+.specials-cards-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 15px 20px;
+}
+
+.specials-cards-content h3,
+.specials-cards-content span
+{
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: 1.1rem;
+}
+
+.specials-cards-content p {
+  color: #474747;
+}
+
+.specials-cards-content button {
+  background: none;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.specials-cards-content button:hover {
+  background-color: transparent;
+}
+
+.specials-card-title{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+.specials-card-title span {
+  color: var(--secondary-tangerince);
+}
+
 /* Specials */
+
+/* Testimonials */
+.testimonial-container{
+  width: 80%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial-container h3{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.testimonial-card {
+  max-width: 280px;
+  padding: 15px 20px;
+}
+
+.testimonial-card p {
+  font-family: var(--font-family-karla);
+  text-align: center;
+}
+
+.testimonial-card img {
+  max-width: 200px;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.star-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.star {
+  width: 40px;
+}
+
+
+/* Testimonials */
 
 @media (min-width: 600px) {
   .footer {
