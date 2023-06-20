@@ -23,7 +23,7 @@ function Specials() {
                 <h3>Greek Salad</h3>
                 <span>$12.99</span>
               </div>
-              <p>
+              <p className="grow">
                 The famous greek salad of crispy lettuce, peppers, olives and
                 our Chicago Style feta cheese, garnished with crunchy garlic and
                 rosemary croutons.
@@ -42,7 +42,7 @@ function Specials() {
                 <h3>Bruschetta</h3>
                 <span>$10.99</span>
               </div>
-              <p>
+              <p className="grow">
                 Our Bruschetta is made from grilled bread that has been smeared
                 with garlic and seasoned with salt and olive oil.
               </p>
@@ -60,7 +60,7 @@ function Specials() {
                 <h3>Lemon Dessert</h3>
                 <span>$7.00</span>
               </div>
-              <p>
+              <p className="grow">
                 This comes straight from grandma's recipe book every last
                 ingredient has been sourced and is as authentic as can be
                 imagined
