@@ -28,7 +28,7 @@ function Specials() {
                 our Chicago Style feta cheese, garnished with crunchy garlic and
                 rosemary croutons.
               </p>
-              <button>Order a Delivery</button>
+              <button className="orderDelivery">Order a Delivery</button>
             </div>
           </Card>
           <Card>
@@ -46,7 +46,7 @@ function Specials() {
                 Our Bruschetta is made from grilled bread that has been smeared
                 with garlic and seasoned with salt and olive oil.
               </p>
-              <button>Order a Delivery</button>
+              <button className="orderDelivery">Order a Delivery</button>
             </div>
           </Card>
           <Card>
@@ -65,7 +65,7 @@ function Specials() {
                 ingredient has been sourced and is as authentic as can be
                 imagined
               </p>
-              <button>Order a Delivery</button>
+              <button className="orderDelivery">Order a Delivery</button>
             </div>
           </Card>
         </div>

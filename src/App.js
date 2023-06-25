@@ -1,14 +1,14 @@
 import './App.css';
-// import Nav from './components/Nav';
+import Nav from './components/Nav';
 import Home from './pages/Home';
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
   return (
    <>
-   {/* <Nav/> */}
+   <Nav/>
    <Home />
-   {/* <Footer /> */}
+   <Footer />
    </>
   );
 }
