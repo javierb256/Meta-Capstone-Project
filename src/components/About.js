@@ -4,25 +4,29 @@ function About() {
   return (
     <>
       {/* About */}
-      <section>
-        <div>
-          <div>
-            <h3>Little Lemon</h3>
-            <h4>Chicago</h4>
-            <p>lorem</p>
+      <section className="about">
+        <div className="about-container">
+          <div className="about-text">
+            <h2>Little Lemon</h2>
+            <h3>Chicago</h3>
+            <p>
+              Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.
+            </p>
           </div>
-          <img
-            src={MarioAdrianA}
-            alt="Owners Mario and Adrian Talking in a kitchen"
-            width={200}
-            height={200}
-          ></img>
-          <img
-            src={MarioAdrianB}
-            alt="Ownser Mario and Adrian preparing a dish"
-            width={200}
-            height={200}
-          ></img>
+          <div className="about-images">
+            <img
+              src={MarioAdrianB}
+              alt="Ownser Mario and Adrian preparing a dish"
+             
+            ></img>
+            <img
+              src={MarioAdrianA}
+              alt="Owners Mario and Adrian Talking in a kitchen"
+             
+            ></img>
+            {/* <div></div>
+            <div></div> */}
+          </div>
         </div>
       </section>
     </>
