@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header>
+    <header className="main-header">
       <div className="header-container">
         <div className="header-info">
           <h2>Little Lemon</h2>

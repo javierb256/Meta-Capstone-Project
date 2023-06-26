@@ -49,7 +49,9 @@ ul {
   padding: 0;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -207,16 +209,16 @@ section {
 /* Card Component */
 
 /* Progress Bar Component  */
-  .progressBar-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--secondary-tangerince);
-    width: 40vw;
-    color: blue;
-    margin: 0 auto;
-    border-radius: 1rem;
-    padding: 0.5rem ;
-  }
+.progressBar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-tangerince);
+  width: 40vw;
+  color: blue;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
 
 /* Progress Bar Component  */
 
@@ -225,7 +227,7 @@ section {
 }
 
 /* Main Header */
-header {
+.home-header {
   background-color: var(--primary-green);
   position: relative;
 }
@@ -483,9 +485,6 @@ img.star {
 
 /* About */
 
-
-
-
 /* Reserve Component */
 .reserve-header {
   background: url("./assets/restaurant.jpg");
@@ -495,7 +494,6 @@ img.star {
   height: 80vh;
   position: relative;
 }
-
 
 .reserve-overlay {
   display: flex;
@@ -556,9 +554,94 @@ img.star {
   padding: 1rem 2rem;
 }
 
-
-
 /* Reserve Component */
+
+/* Table Selection Component  */
+.table-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 20px;
+}
+
+.table-location p {
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-karla);
+  font-size: 2rem;
+}
+
+.table-location-options {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-karla);
+}
+
+.table-selection h2 {
+  margin-bottom: 2rem;
+}
+
+.table-selection img {
+  display: block;
+  margin: 0 auto;
+}
+
+.table-radio {
+  font-family: var(--font-family-karla);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.6em;
+}
+
+.table-radio input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+.table-radio input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  /* box-shadow: inset 1em 1em var(--form-control-color); */
+  box-shadow: inset 1em 1em rgb(39, 107, 254);
+  background-color: CanvastText;
+}
+
+.table-radio input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.table-radio input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+.table-radio:focus-within {
+  color: rgb(39, 107, 254);
+}
+
+.table-radio + .table-radio {
+  margin-top: .4em;
+}
+/* Table Selection Component  */
 
 @media (min-width: 600px) {
   .footer {
@@ -599,24 +682,24 @@ img.star {
     display: block;
     margin: 0 auto;
     width: 25vw;
-    padding: .5rem .6rem;
+    padding: 0.5rem 0.6rem;
   }
 
   /* reserve component */
   .reserve-header {
     height: 40vh;
   }
-  
+
   .reserve-overlay h1 {
     font-size: 4rem;
     line-height: 0.8;
   }
 
   .reserve-info-container {
-   flex-direction: column-reverse;
-   justify-content: center;
-   align-items: center;
-   gap: 50px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
   }
 
   /* reserve component */
@@ -631,12 +714,12 @@ img.star {
     margin-top: 1.5rem;
   }
 
-   /* reserve component */
-   .reserve-info-map {
+  /* reserve component */
+  .reserve-info-map {
     background-color: red;
     width: 100%;
-   max-width: 400px;
-   height: auto;
+    max-width: 400px;
+    height: auto;
   }
 
   /* reserve component */
@@ -815,7 +898,6 @@ img.star {
     gap: 20px;
   }
 
-  
   /* reserve component */
   .reserve-header {
     height: 60vh;
@@ -828,11 +910,8 @@ img.star {
   /* reserve component */
 }
 
-
-
 @media (max-width: 420px) {
-
-  .specials-title h2{
+  .specials-title h2 {
     line-height: 0.8;
   }
 
@@ -841,22 +920,20 @@ img.star {
     width: 40vw;
   }
 
-    /* reserve component */
-    .reserve-header {
-      height: 90vh;
-    }
-    .reserve-overlay h1 {
-      font-size: 3rem;
-      width: 100%;
-    }
+  /* reserve component */
+  .reserve-header {
+    height: 90vh;
+  }
+  .reserve-overlay h1 {
+    font-size: 3rem;
+    width: 100%;
+  }
 
-    .reserve-info h2 {
-      line-height: 0.8;
-    }
+  .reserve-info h2 {
+    line-height: 0.8;
+  }
 
-  
-    /* reserve component */
-  
+  /* reserve component */
 }
 
 @media (max-width: 700px) {
