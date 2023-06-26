@@ -1,3 +1,7 @@
+import Location from "../assets/Location.png";
+import Calendar from "../assets/calendar.png";
+// import ProgressBar from "../components/ProgressBar";
+
 function Reserve() {
   return (
     <>
@@ -6,53 +10,63 @@ function Reserve() {
           <h1>Welcome to Little Lemon</h1>
         </div>
       </div>
-      <section>
+      <section className="reserve-info">
         <h2>Hours and Location</h2>
         <div className="reserve-info-container">
-          <div>
+          <div className="reserve-info-hours">
             <h3>Business Hours</h3>
             <ul>
               <li>
-                Mon <span>10:00 am - 8:30 pm</span>
+                <b>Mon</b> 10:00 am - 8:30 pm
               </li>
               <li>
-                Tues <span>10:00 am - 8:30 pm</span>
+                <b>Tues</b> 10:00 am - 8:30 pm
               </li>
               <li>
-                Wed <span>10:00 am - 8:30 pm</span>
+                <b>Wed</b> 10:00 am - 8:30 pm
               </li>
               <li>
-                Thurs <span>10:00 am - 8:30 pm</span>
+                <b>Thurs</b> 10:00 am - 8:30 pm
               </li>
               <li>
-                Fri <span>10:00 am - 8:30 pm</span>
+                <b>Fri</b> 10:00 am - 8:30 pm
               </li>
               <li>
-                Sat <span>8:30 am - 7:30 pm</span>
+                <b>Sat</b> 8:30 am - 7:30 pm
               </li>
               <li>
-                Sun <span>8:30 am - 7:30 pm</span>
+                <b>Sun</b> 8:30 am - 7:30 pm
               </li>
             </ul>
           </div>
-          <div>map</div>
+          <div>
+            <img
+              src={Location}
+              alt="map location of restaurant "
+              className="reserve-info-map"
+            />
+          </div>
         </div>
       </section>
-      <section>
-        <h3>Reserve a Table</h3>
-        <div>progress bar</div>
-        <div className="reserve-inputs">
-          <div>
-            <label for="date">Date</label>
+
+      <section className="reserve-details">
+        <h2>Reserve a Table</h2>
+        {/* <ProgressBar /> */}
+        <div className="reserve-details-inputs">
+          <div className="reserve-input">
+            <label for="date"><img src={Calendar} alt="calendar icon" width={20} height={20}/>Date</label>
             <input type="date" id="date" name="date"></input>
           </div>
-          <div>
+          <div className="reserve-input">
             <label for="time">Time</label>
             <input type="time" id="time" name="time"></input>
           </div>
-          <div>
+          <div className="reserve-input">
             <label for="guests">Guests</label>
             <input type="number" id="guests" name="guests"></input>
+          </div>
+          <div>
+            <button type="submit">Find a Table</button>
           </div>
         </div>
       </section>
