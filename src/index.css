@@ -195,6 +195,11 @@ section {
   font-weight: var(--font-weight-bold);
 }
 
+.container {
+  border: 1px solid var(--highlight-anti-white);
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 /* Card Component */
 
 .card-container {
@@ -620,7 +625,6 @@ img.star {
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  /* box-shadow: inset 1em 1em var(--form-control-color); */
   box-shadow: inset 1em 1em rgb(39, 107, 254);
   background-color: CanvastText;
 }
@@ -639,9 +643,136 @@ img.star {
 }
 
 .table-radio + .table-radio {
-  margin-top: .4em;
+  margin-top: 0.4em;
 }
 /* Table Selection Component  */
+
+/* Contact Information Component  */
+.contact-container {
+  margin: 5rem auto;
+  width: 50vw;
+}
+
+.contact-container hr {
+  color: rgba(0, 0, 0, 0.2);
+}
+.contact-container form {
+  padding: 3rem 1rem;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contact-container label,
+.contact-container input {
+  font-family: var(--font-family-karla);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.contact-inputs input {
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container select {
+  font-size: 1.5rem;
+  padding: 0.75em 1.5em;
+  background-color: var(--highlight-anti-white);
+  color: #787878;
+  font-weight: var(--font-weight-semi-bold);
+  appearance: none;
+  border: 0;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-container select.active {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.select {
+  position: relative;
+  max-width: 250px;
+}
+
+.select span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 3rem;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.arrow::after {
+  border-left: 0.75em solid transparent;
+  border-right: 0.75em solid transparent;
+  border-top: 0.75em solid #787878;
+  top: 40%;
+}
+
+.active.arrow::after {
+  border-top: 0.75em solid white;
+}
+
+.contact-container h4 {
+  margin-top: 2rem;
+}
+
+.contact-container textarea {
+  resize: none;
+  width: 90%;
+  border: 1px solid black;
+  margin-top: 0.8rem;
+  height: 300px;
+}
+
+.contact-container button {
+  appearance: none;
+  background: none;
+  border: none;
+  color: var(--highlight-black);
+  background-color: var(--primary-yellow);
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.contact-container button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-tangerince);
+}
+/* Contact Information Component  */
 
 @media (min-width: 600px) {
   .footer {
@@ -703,6 +834,15 @@ img.star {
   }
 
   /* reserve component */
+
+  /* contact component  */
+  .contact-container {
+    width: 80vw;
+  }
+  .contact-inputs {
+    width: 100%;
+  }
+  /* contact component  */
 }
 
 @media (max-width: 644px) {
@@ -765,8 +905,9 @@ img.star {
   }
 
   .navbar-mobile {
-    position: fixed;
+    position: sticky;
     display: block;
+    top: 0;
     width: 100%;
     z-index: 90;
     transition: 0.4s;
@@ -839,7 +980,6 @@ img.star {
 
   .specials button {
     margin-top: 1.5rem;
-    /* width: 40vw; */
   }
 
   .about {
@@ -908,6 +1048,29 @@ img.star {
   }
 
   /* reserve component */
+
+  /* Contact Component  */
+  .contact-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 80vw;
+  }
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .contact-inputs {
+    width: 100%;
+  }
+
+  .select {
+    max-width: 210px;
+  }
+  .contact-container select {
+    font-size: 1.1rem;
+  }
+  /* Contact Component  */
 }
 
 @media (max-width: 420px) {
@@ -934,6 +1097,25 @@ img.star {
   }
 
   /* reserve component */
+  /* contact component   */
+  .select {
+    max-width: 180px;
+  }
+  .contact-container select {
+    font-size: 1rem;
+  }
+
+  .arrow::after {
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid #787878;
+    top: 45%;
+  }
+
+  .active.arrow::after {
+    border-top: 0.5em solid white;
+  }
+  /* contact component   */
 }
 
 @media (max-width: 700px) {
