@@ -1,9 +1,8 @@
 import './App.css';
 import Nav from './components/Nav';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import Footer from './components/Footer'
-import TableSelection from './pages/TableSelection';
-import ContactInformation from './components/ContactInformation';
+import CardDetails from './components/CardDetails';
 
 function App() {
   return (
@@ -11,9 +10,9 @@ function App() {
    <Nav/>
    {/* <Home /> */}
    {/* <TableSelection /> */}
-   <ContactInformation/>
+   <CardDetails />
    <Footer />
-   </>
+   </> 
   );
 }
 

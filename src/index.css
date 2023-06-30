@@ -103,6 +103,10 @@ section {
   margin-top: 10rem;
 }
 
+hr {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&family=Markazi+Text:wght@400;600;700&display=swap");
 :root {
   /*Font Family and Font Weights */
@@ -211,6 +215,25 @@ section {
 }
 
 /* Card Component */
+
+.custom-button {
+  appearance: none;
+  background: none;
+  border: none;
+  display: block;
+  color: var(--highlight-black);
+  background-color: var(--primary-yellow);
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-tangerince);
+}
 
 /* Progress Bar Component  */
 .progressBar-container {
@@ -653,9 +676,6 @@ img.star {
   width: 50vw;
 }
 
-.contact-container hr {
-  color: rgba(0, 0, 0, 0.2);
-}
 .contact-container form {
   padding: 3rem 1rem;
 }
@@ -773,6 +793,91 @@ img.star {
   background-color: var(--secondary-tangerince);
 }
 /* Contact Information Component  */
+
+/* Card Details Container */
+.paymentInfo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.paymentInfo-card {
+  min-width: 550px;
+  border: 1px solid var(--highlight-anti-white);
+  box-shadow: 0px 1px 5px 1px rgb(222, 222, 222);
+}
+
+.paymentInfo-card h3 {
+  text-align: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 15px 0 50px 20px;
+}
+
+  .cardDetails h3 {
+    padding-top: 10px;
+  }
+
+.card-info label {
+  font-weight: var(--font-weight-extra-bold);
+  font-family: var(--font-family-karla);
+  margin-bottom: 0.3rem;
+}
+
+.card-info > input {
+  margin-bottom: 1rem;
+}
+
+.card-info-back {
+  display: flex;
+  gap: 20px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.review h3 {
+  background-color: var(--secondary-tangerince);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reservation-review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.reservation-detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reservation-detail img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+
+.reservation-detail p {
+  margin: 0;
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/* Card Details Container */
 
 @media (min-width: 600px) {
   .footer {
@@ -1071,6 +1176,16 @@ img.star {
     font-size: 1.1rem;
   }
   /* Contact Component  */
+
+  /* reservation Component */
+  .card-info {
+    width: 90%;
+  }
+  .paymentInfo-card {
+    min-width: 400px;
+    max-width: 400px;
+  }
+  /* reservation Component */
 }
 
 @media (max-width: 420px) {
@@ -1116,6 +1231,28 @@ img.star {
     border-top: 0.5em solid white;
   }
   /* contact component   */
+
+  /* reservation Component */
+  .paymentInfo-card {
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  .paymentInfo-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-info label {
+    font-size: 0.9rem;
+  }
+
+  .reservation-detail p{
+    font-size: 1.1rem;
+  }
+  .reservation-detail img{
+    max-width: 35px;
+  }
+  /* reservation Component */
 }
 
 @media (max-width: 700px) {
