@@ -879,6 +879,31 @@ img.star {
 
 /* Card Details Container */
 
+/* Table Confirmation Component */
+.confirmation-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.confirmation-container h3 {
+  text-align: center;
+  background-color: var(--secondary-tangerince);
+  color: white;
+  padding: 1rem 0;
+  font-family: var(--font-family-markazi);
+}
+
+.confirmation-container p {
+  padding: 1rem 1.5rem;
+  font-family: var(--font-family-karla);
+}
+
+
+/* Table Confirmation Component */
+
 @media (min-width: 600px) {
   .footer {
     grid-template-columns: repeat(2, 1fr);

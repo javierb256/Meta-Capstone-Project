@@ -2,7 +2,7 @@ import './App.css';
 import Nav from './components/Nav';
 // import Home from './pages/Home';
 import Footer from './components/Footer'
-import CardDetails from './components/CardDetails';
+import TableConfirmation from './components/TableConfirmation';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
    <Nav/>
    {/* <Home /> */}
    {/* <TableSelection /> */}
-   <CardDetails />
+   <TableConfirmation />
    <Footer />
    </> 
   );
