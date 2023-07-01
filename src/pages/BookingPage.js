@@ -2,7 +2,7 @@ import Location from "../assets/Location.png";
 import Calendar from "../assets/calendar.png";
 // import ProgressBar from "../components/ProgressBar";
 
-function Reserve() {
+function BookingPage() {
   return (
     <>
       <div className="reserve-header">
@@ -74,4 +74,4 @@ function Reserve() {
   );
 }
 
-export default Reserve;
+export default BookingPage;

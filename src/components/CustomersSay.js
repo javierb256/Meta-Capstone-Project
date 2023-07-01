@@ -1,4 +1,4 @@
-import Card from "../components/Card";
+import Card from "./Card";
 import Reviewer1 from "../assets/Guy 1.png";
 import Reviewer2 from "../assets/Guy 2.png";
 import Reviewer3 from "../assets/Woman 1.png";
@@ -6,7 +6,7 @@ import Reviewer4 from "../assets/Woman 2.png";
 import Star from "../assets/Star.png";
 import StarHalf from "../assets/Star Half.png";
 
-function Testimonials() {
+function CustomersSay() {
   return (
     <section className="testimonial">
       <h2>Testimonials</h2>
@@ -84,4 +84,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default CustomersSay;

@@ -1,8 +1,8 @@
 import Logo from "../assets/Logo .svg";
 import { Routes, Route, Link } from "react-router-dom";
-import Home from "../pages/Home";
-import Reserve from "../pages/Reserve";
 import { useState } from "react";
+import Homepage from "../pages/Homepage";
+import BookingPage from "../pages/BookingPage";
 
 function Nav() {
   const [isActive, setActive] = useState(false);
@@ -26,7 +26,7 @@ function Nav() {
             <Link href="/">Menu</Link>
           </li>
           <li>
-            <Link to="/reservations">Reservations</Link>
+            <Link to="/booking">Booking</Link>
           </li>
           <li>
             <Link href="/">Order Online</Link>
@@ -44,21 +44,33 @@ function Nav() {
           >
             <div className="bar"></div>
           </button>
-          <img src={Logo} alt="Logo with yellow lemon"/>
+          <img src={Logo} alt="Logo with yellow lemon" />
         </div>
         <nav className={isActive ? "navbar-menu is-active" : "navbar-menu"}>
-          <Link to="/" onClick={toggleName}>Home</Link>
-          <Link to="/about" onClick={toggleName}>About</Link>
-          <Link href="/" onClick={toggleName}>Menu</Link>
-          <Link to="/reservations" onClick={toggleName}>Reservations</Link>
-          <Link href="/" onClick={toggleName}>Order Online</Link>
-          <Link href="/" onClick={toggleName}>Log In</Link>
+          <Link to="/" onClick={toggleName}>
+            Home
+          </Link>
+          <Link to="/about" onClick={toggleName}>
+            About
+          </Link>
+          <Link href="/" onClick={toggleName}>
+            Menu
+          </Link>
+          <Link to="/reservations" onClick={toggleName}>
+            Reservations
+          </Link>
+          <Link href="/" onClick={toggleName}>
+            Order Online
+          </Link>
+          <Link href="/" onClick={toggleName}>
+            Log In
+          </Link>
         </nav>
       </div>
- 
+
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/reservations" element={<Reserve />} />
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/booking" element={<BookingPage />}></Route>
       </Routes>
     </>
   );

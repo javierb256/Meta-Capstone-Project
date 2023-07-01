@@ -1,6 +1,6 @@
 import MarioAdrianA from "../assets/Mario and Adrian A.jpg";
 import MarioAdrianB from "../assets/Mario and Adrian b.jpg";
-function About() {
+function Chicago() {
   return (
     <>
       {/* About */}
@@ -33,4 +33,4 @@ function About() {
   );
 }
 
-export default About;
+export default Chicago;
