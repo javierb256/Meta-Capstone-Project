@@ -4,16 +4,16 @@
 // import { Routes, Route } from "react-router-dom";
 // import HomePage from '../pages/Homepage';
 // import BookingPage from '../pages/BookingPage';
+import Homepage from "../pages/Homepage";
 
 function Main() {
 
   return (
-    // <main>
-    //   <Specials />
-    //   <Testimonials />
-    //   <Chicago />
-    // </main>
-    <></>
+    <>
+    <Homepage />
+    
+    </>
+
   );
 }
 

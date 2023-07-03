@@ -1,5 +1,6 @@
 import Location from "../assets/Location.png";
-import Calendar from "../assets/calendar.png";
+// import Calendar from "../assets/calendar.png";
+import BookingForm from "../components/BookingForm";
 // import ProgressBar from "../components/ProgressBar";
 
 function BookingPage() {
@@ -52,7 +53,7 @@ function BookingPage() {
       <section className="reserve-details">
         <h2>Reserve a Table</h2>
         {/* <ProgressBar /> */}
-        <div className="reserve-details-inputs">
+        {/* <div className="reserve-details-inputs">
           <div className="reserve-input">
             <label for="date"><img src={Calendar} alt="calendar icon" width={20} height={20}/>Date</label>
             <input type="date" id="date" name="date"></input>
@@ -68,7 +69,8 @@ function BookingPage() {
           <div>
             <button type="submit">Find a Table</button>
           </div>
-        </div>
+         </div> */}
+        <BookingForm />
       </section>
     </>
   );

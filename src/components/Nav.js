@@ -1,7 +1,7 @@
 import Logo from "../assets/Logo .svg";
 import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
-import Homepage from "../pages/Homepage";
+import Main from "./Main";
 import BookingPage from "../pages/BookingPage";
 
 function Nav() {
@@ -69,7 +69,7 @@ function Nav() {
       </div>
 
       <Routes>
-        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/" element={<Main />}></Route>
         <Route path="/booking" element={<BookingPage />}></Route>
       </Routes>
     </>
