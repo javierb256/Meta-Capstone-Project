@@ -1,8 +1,8 @@
 import Logo from "../assets/Logo .svg";
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
-import Main from "./Main";
-import BookingPage from "../pages/BookingPage";
+// import Homepage from "../pages/Homepage";
+// import BookingPage from "../pages/BookingPage";
 
 function Nav() {
   const [isActive, setActive] = useState(false);
@@ -20,19 +20,19 @@ function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="">About</Link>
           </li>
           <li>
-            <Link href="/">Menu</Link>
+            <Link to="/">Menu</Link>
           </li>
           <li>
             <Link to="/booking">Booking</Link>
           </li>
           <li>
-            <Link href="/">Order Online</Link>
+            <Link to="/">Order Online</Link>
           </li>
           <li>
-            <Link href="/">Log In</Link>
+            <Link to="/">Log In</Link>
           </li>
         </ul>
       </nav>
@@ -53,27 +53,36 @@ function Nav() {
           <Link to="/about" onClick={toggleName}>
             About
           </Link>
-          <Link href="/" onClick={toggleName}>
+          <Link to="/" onClick={toggleName}>
             Menu
           </Link>
           <Link to="/reservations" onClick={toggleName}>
             Reservations
           </Link>
-          <Link href="/" onClick={toggleName}>
+          <Link to="/" onClick={toggleName}>
             Order Online
           </Link>
-          <Link href="/" onClick={toggleName}>
+          <Link to="/" onClick={toggleName}>
             Log In
           </Link>
         </nav>
       </div>
 
-      <Routes>
-        <Route path="/" element={<Main />}></Route>
+      {/* <Routes>
+        <Route path="/" element={<Homepage />}></Route>
         <Route path="/booking" element={<BookingPage />}></Route>
-      </Routes>
+      </Routes> */}
     </>
   );
 }
 
 export default Nav;
+
+
+// function Nav(){
+//   return(
+//     <h1>Nav</h1>
+//   )
+// }
+
+// export default Nav;

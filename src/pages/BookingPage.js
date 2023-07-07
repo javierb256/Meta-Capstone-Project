@@ -1,9 +1,8 @@
 import Location from "../assets/Location.png";
-// import Calendar from "../assets/calendar.png";
 import BookingForm from "../components/BookingForm";
-// import ProgressBar from "../components/ProgressBar";
 
-function BookingPage() {
+function BookingPage(props) {
+
   return (
     <>
       <div className="reserve-header">
@@ -70,7 +69,7 @@ function BookingPage() {
             <button type="submit">Find a Table</button>
           </div>
          </div> */}
-        <BookingForm />
+        <BookingForm time={props.time} dispatch={props.dispatch}/>
       </section>
     </>
   );
