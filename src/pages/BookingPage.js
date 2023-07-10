@@ -50,7 +50,6 @@ function BookingPage(props) {
       </section>
 
       <section className="reserve-details">
-        <h2>Reserve a Table</h2>
         {/* <ProgressBar /> */}
         {/* <div className="reserve-details-inputs">
           <div className="reserve-input">
