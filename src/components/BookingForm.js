@@ -11,6 +11,7 @@ function BookingForm(props) {
     setDate("");
     setGuests("");
     setOccasion("");
+    props.submit(e.target.data);
   };
 
   return (
@@ -27,6 +28,7 @@ function BookingForm(props) {
         />
         <label htmlFor="res-time">Choose time</label>
         <select id="res-time">
+          {/* populates select element with options from availableTimes state */}
           {times?.map((element, index) => {
             return <option key={index}>{element}</option>;
           })}

@@ -50,25 +50,7 @@ function BookingPage(props) {
       </section>
 
       <section className="reserve-details">
-        {/* <ProgressBar /> */}
-        {/* <div className="reserve-details-inputs">
-          <div className="reserve-input">
-            <label for="date"><img src={Calendar} alt="calendar icon" width={20} height={20}/>Date</label>
-            <input type="date" id="date" name="date"></input>
-          </div>
-          <div className="reserve-input">
-            <label for="time">Time</label>
-            <input type="time" id="time" name="time"></input>
-          </div>
-          <div className="reserve-input">
-            <label for="guests">Guests</label>
-            <input type="number" id="guests" name="guests"></input>
-          </div>
-          <div>
-            <button type="submit">Find a Table</button>
-          </div>
-         </div> */}
-        <BookingForm time={props.time} dispatch={props.dispatch}/>
+        <BookingForm time={props.time} dispatch={props.dispatch} submit={props.submit}/>
       </section>
     </>
   );
