@@ -22,12 +22,12 @@ function BookingForm(props) {
         <input
           type="date"
           id="res-date"
-          value={date}
           //returns the selected date inside the dispatch parameter for the availableTimes useReducer
           onChange={e => props.dispatch({ type: e.target.value })}
+          required
         />
         <label htmlFor="res-time">Choose time</label>
-        <select id="res-time">
+        <select id="res-time" required>
           {/* populates select element with options from availableTimes state */}
           {times?.map((element, index) => {
             return <option key={index}>{element}</option>;
@@ -42,6 +42,7 @@ function BookingForm(props) {
           id="guests"
           value={guests}
           onChange={e => setGuests(e.target.value)}
+          required
         />
         <label htmlFor="occasion">Occasion</label>
         <select
@@ -49,6 +50,7 @@ function BookingForm(props) {
           value={occasion}
           onChange={e => setOccasion(e.target.value)}
         >
+          <option></option>
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>

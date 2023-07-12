@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-function TableConfirmation(props) {
-    console.log(props)
+function TableConfirmation() {
     return (
         <div className="confirmation-container container">
             <h3>Table Reserved</h3>

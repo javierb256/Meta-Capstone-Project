@@ -705,8 +705,15 @@ img.star {
 
 .contact-inputs input {
   margin-top: 0.3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
+
+.contact-inputs div {
+  color: red;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
+
 
 .contact-container select {
   font-size: 1.5rem;
@@ -783,6 +790,11 @@ img.star {
   height: 300px;
 }
 
+.contact-container textarea + div {
+  color: red;
+  margin-top: 0.5rem;
+}
+
 .contact-container button {
   appearance: none;
   background: none;
@@ -801,6 +813,11 @@ img.star {
 .contact-container button:hover {
   cursor: pointer;
   background-color: var(--secondary-tangerince);
+}
+
+.contact-container button:disabled {
+  background-color: #cacaca;
+  color: #777;
 }
 /* Contact Information Component  */
 

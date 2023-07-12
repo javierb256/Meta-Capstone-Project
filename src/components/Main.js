@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import BookingPage from "../pages/BookingPage";
 import Homepage from "../pages/Homepage";
 import ConfirmedBooking from "../components/ConfirmedBooking";
+import ContactInformation from "../data/ContactInformation";
 
 const updateTimes = (state, action) => {
   //The first action type would update the options to the entered times
@@ -24,7 +25,7 @@ function Main() {
   // when form is submited will navigate to table confirmation when return value is true
   function submitForm(formData) {
     if (submitAPI(formData) === true) {
-      navigate("/booking-confirmation");
+      navigate("/contact-information");
     }
   }
 
@@ -46,6 +47,10 @@ function Main() {
         <Route
           path="/booking-confirmation"
           element={<ConfirmedBooking />}
+        ></Route>
+        <Route
+        path="/contact-information"
+        element={<ContactInformation />}
         ></Route>
       </Routes>
       <Footer />
