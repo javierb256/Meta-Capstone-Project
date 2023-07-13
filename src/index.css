@@ -235,6 +235,11 @@ hr {
   background-color: var(--secondary-tangerince);
 }
 
+.custom-button:disabled {
+  background-color: #cacaca;
+  color: #777;
+}
+
 /* Progress Bar Component  */
 .progressBar-container {
   display: flex;
@@ -815,10 +820,6 @@ img.star {
   background-color: var(--secondary-tangerince);
 }
 
-.contact-container button:disabled {
-  background-color: #cacaca;
-  color: #777;
-}
 /* Contact Information Component  */
 
 /* Card Details Container */

@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import BookingPage from "../pages/BookingPage";
 import Homepage from "../pages/Homepage";
 import ConfirmedBooking from "../components/ConfirmedBooking";
-import ContactInformation from "../data/ContactInformation";
+import ContactInformation from "./ContactInformation";
 
 const updateTimes = (state, action) => {
   //The first action type would update the options to the entered times
