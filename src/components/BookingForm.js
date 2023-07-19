@@ -11,7 +11,7 @@ function BookingForm(props) {
     initialValues: {
       date: dayjs().format("YYYY-MM-DD"),
       time: "",
-      guests: "1",
+      guests: 1,
       occasion: "",
     },
     validationSchema: Yup.object({
@@ -45,7 +45,7 @@ function BookingForm(props) {
             {...formik.getFieldProps("date")}
           />
           {formik.touched.date && formik.errors.date ? (
-            <div>{formik.errors.date}</div>
+            <div aria-label="invalidDate">{formik.errors.date}</div>
           ) : null}
         </div>
 
@@ -59,7 +59,7 @@ function BookingForm(props) {
           </select>
 
           {formik.touched.time && formik.errors.time ? (
-            <div>{formik.errors.time}</div>
+            <div data-testid="invalid-time">{formik.errors.time}</div>
           ) : null}
         </div>
 
@@ -72,7 +72,7 @@ function BookingForm(props) {
             {...formik.getFieldProps("guests")}
           />
           {formik.touched.guests && formik.errors.guests ? (
-            <div>{formik.errors.guests}</div>
+            <div data-testid="invalid-guests">{formik.errors.guests}</div>
           ) : null}
         </div>
 

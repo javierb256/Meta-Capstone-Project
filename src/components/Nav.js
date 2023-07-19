@@ -67,22 +67,8 @@ function Nav() {
           </Link>
         </nav>
       </div>
-
-      {/* <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/booking" element={<BookingPage />}></Route>
-      </Routes> */}
     </>
   );
 }
 
 export default Nav;
-
-
-// function Nav(){
-//   return(
-//     <h1>Nav</h1>
-//   )
-// }
-
-// export default Nav;

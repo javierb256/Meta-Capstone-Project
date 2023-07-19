@@ -8,14 +8,14 @@ import Homepage from "../pages/Homepage";
 import ConfirmedBooking from "../components/ConfirmedBooking";
 import ContactInformation from "./ContactInformation";
 
-const updateTimes = (state, action) => {
+export const updateTimes = (state, action) => {
   //The first action type would update the options to the entered times
   if (action.type.length !== 0) return fetchAPI(new Date(action.type));
   return state;
 };
 
 //sets the initiale times on page load
-const initializeTimes = fetchAPI(new Date());
+export const initializeTimes = fetchAPI(new Date());
 
 function Main() {
   //reducer that changes available times first on initial times or updated on date selection
@@ -49,8 +49,8 @@ function Main() {
           element={<ConfirmedBooking />}
         ></Route>
         <Route
-        path="/contact-information"
-        element={<ContactInformation />}
+          path="/contact-information"
+          element={<ContactInformation />}
         ></Route>
       </Routes>
       <Footer />
