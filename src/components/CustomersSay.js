@@ -33,11 +33,11 @@ function CustomersSay() {
           <div className="testimonial-card">
             <h3>Sarah</h3>
             <img src={Reviewer3} alt="reviewer profile 2"></img>
-            
-              <p className="grow">
-                I really liked the atmosphere and the waiters were very nice.
-              </p>
-   
+
+            <p className="grow">
+              I really liked the atmosphere and the waiters were very nice.
+            </p>
+
             <h3>Rating</h3>
             <div className="star-container">
               <img src={Star} alt="star rating" className="star"></img>
@@ -52,7 +52,9 @@ function CustomersSay() {
           <div className="testimonial-card">
             <h3>Alex</h3>
             <img src={Reviewer2} alt="reviewer profile 3"></img>
-            <p className="grow">The selection was great and getting seated was very easy!</p>
+            <p className="grow">
+              The selection was great and getting seated was very easy!
+            </p>
             <h3>Rating</h3>
             <div className="star-container">
               <img src={Star} alt="star rating" className="star"></img>

@@ -81,7 +81,7 @@ function BookingForm(props) {
           type="submit"
           disabled={!(formik.isValid && formik.dirty)}
         >
-          Make Reservation
+          Book a Table
         </button>
       </form>
     </>

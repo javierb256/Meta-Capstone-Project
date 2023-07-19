@@ -12,7 +12,7 @@ function Nav() {
   return (
     <>
       <nav className="navbar">
-        <Link to="/">
+        <Link to="/" aria-label="Go to Homepage">
           <img src={Logo} alt="Logo with yellow lemon"></img>
         </Link>
         <ul className="navbar-links">
@@ -41,6 +41,7 @@ function Nav() {
           <button
             className={isActive ? "hamburger is-active" : "hamburger"}
             onClick={toggleName}
+            aria-label="hamburger menu button"
           >
             <div className="bar"></div>
           </button>

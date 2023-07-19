@@ -295,6 +295,28 @@ input, select {
 }
 /* Booking Form Component  */
 
+/* GoBack Component */
+  .back-button {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    max-width: 50px;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .back-button:hover {
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+  }
+
+  .back-button img {
+    width: 100%;
+  }
+/* GoBack Component */
+
 .grow {
   flex-grow: 1;
 }

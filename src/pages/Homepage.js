@@ -1,9 +1,5 @@
-// import MainImage from "../assets/restauranfood.jpg";
-// import Header from "../components/Header";
-// import Main from "../components/Main";
-// import Footer from "../components/Footer";
 import Specials from "../components/Specials";
-import Testimonials from "../components/CustomersSay";
+import CustomersSay from "../components/CustomersSay";
 import Chicago from "../components/Chicago";
 
 function Homepage() {
@@ -11,7 +7,7 @@ function Homepage() {
     <>
      <main>
       <Specials />
-      <Testimonials />
+      <CustomersSay />
       <Chicago />
     </main>
 

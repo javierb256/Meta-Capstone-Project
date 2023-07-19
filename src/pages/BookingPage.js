@@ -2,7 +2,6 @@ import Location from "../assets/Location.png";
 import BookingForm from "../components/BookingForm";
 
 function BookingPage(props) {
-
   return (
     <>
       <div className="reserve-header">
@@ -50,7 +49,11 @@ function BookingPage(props) {
       </section>
 
       <section className="reserve-details">
-        <BookingForm time={props.time} dispatch={props.dispatch} submit={props.submit}/>
+        <BookingForm
+          time={props.time}
+          dispatch={props.dispatch}
+          submit={props.submit}
+        />
       </section>
     </>
   );
