@@ -12,7 +12,7 @@ function BookingForm(props) {
       date: dayjs().format("YYYY-MM-DD"),
       time: "",
       guests: 1,
-      occasion: "",
+      location: "",
     },
     validationSchema: Yup.object({
       guests: Yup.number()
@@ -27,7 +27,8 @@ function BookingForm(props) {
         .label("Choose a time"),
     }),
     onSubmit: values => {
-      navigate("/contact-information");
+      // navigate("/contact-information");
+      alert(JSON.stringify(values, null, 2));
     },
   });
 
@@ -74,6 +75,34 @@ function BookingForm(props) {
           {formik.touched.guests && formik.errors.guests ? (
             <div data-testid="invalid-guests">{formik.errors.guests}</div>
           ) : null}
+        </div>
+
+        <p>Table Selection: </p>
+        <div
+          role="group"
+          aria-label="radio-group"
+          className="table-location-options"
+          {...formik.getFieldProps("location")}
+        >
+          <label className="table-radio" htmlFor="indoors">
+            <input
+              type="radio"
+              id="indoors"
+              name="location"
+              value="Indoors"
+            />
+            Indoors
+          </label>
+
+          <label className="table-radio">
+            <input
+              type="radio"
+              id="outdoors"
+              name="location"
+              value="Outdoors"
+            />
+            Outdoors
+          </label>
         </div>
 
         <button

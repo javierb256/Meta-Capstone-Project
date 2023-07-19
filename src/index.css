@@ -293,6 +293,12 @@ input, select {
   display: flex;
   flex-direction: column;
 }
+
+.bookingForm p {
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
 /* Booking Form Component  */
 
 /* GoBack Component */
@@ -671,6 +677,7 @@ img.star {
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-karla);
+  margin: 0 auto;
 }
 
 .table-selection h2 {
