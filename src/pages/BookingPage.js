@@ -52,7 +52,6 @@ function BookingPage(props) {
           <BookingForm
             time={props.time}
             dispatch={props.dispatch}
-            submitForm={props.submitForm}
           />
         </section>
       </>
