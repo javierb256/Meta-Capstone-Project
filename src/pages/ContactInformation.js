@@ -48,8 +48,8 @@ function ContactInformation(props) {
             .max(10, "Too long"),
         })}
         innerRef={formRef}
-        onSubmit={() => {
-          // props.submitForm()
+        onSubmit={values => {
+          alert(JSON.stringify(values, null, 2));
         }}
       >
         {formik => (
