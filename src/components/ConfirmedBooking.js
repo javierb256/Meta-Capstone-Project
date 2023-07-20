@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function TableConfirmation() {
+function ConfirmedBooking() {
     return (
         <div className="confirmation-container container">
             <h3>Table Reserved</h3>
@@ -10,4 +10,4 @@ function TableConfirmation() {
     )
 }
 
-export default TableConfirmation;
+export default ConfirmedBooking;

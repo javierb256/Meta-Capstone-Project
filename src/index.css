@@ -747,8 +747,14 @@ img.star {
 
 /* Contact Information Component  */
 .contact-container {
-  margin: 5rem auto;
+  margin: 2rem auto;
   width: 50vw;
+}
+
+.contact-container h3 {
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 0;
 }
 
 .contact-container form {
@@ -880,7 +886,41 @@ img.star {
   background-color: var(--secondary-tangerince);
 }
 
+.summary-details {
+  padding: .5rem 0;
+}
+
+.summary h3{
+  background-color: var(--secondary-tangerince);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.summary p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.summary img {
+  width: 100%;
+  max-width: 25px;
+}
+
+.summary hr {
+  border-top: .5px solid rgb(216, 216, 216);
+}
+
+.reserve-button {
+  width: 50vw;
+  margin-bottom: 2rem;
+}
+
 /* Contact Information Component  */
+
+
 
 /* Card Details Container */
 .paymentInfo-container {

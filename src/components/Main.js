@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import BookingPage from "../pages/BookingPage";
 import Homepage from "../pages/Homepage";
 import ConfirmedBooking from "../components/ConfirmedBooking";
-import ContactInformation from "./ContactInformation";
+import ContactInformation from "../pages/ContactInformation";
 
 export const updateTimes = (state, action) => {
   //The first action type would update the options to the entered times
@@ -40,7 +40,7 @@ function Main() {
             <BookingPage
               time={availableTimes}
               dispatch={dispatch}
-              submit={submitForm}
+              submitForm={submitForm}
             />
           }
         ></Route>

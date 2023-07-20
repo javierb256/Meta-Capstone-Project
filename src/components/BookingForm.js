@@ -25,10 +25,17 @@ function BookingForm(props) {
       time: Yup.string()
         .required("Please select a time")
         .label("Choose a time"),
+      location: Yup.string().required("Please select a table location"),
     }),
     onSubmit: values => {
-      // navigate("/contact-information");
-      alert(JSON.stringify(values, null, 2));
+      navigate("/contact-information", {
+        state: {
+          guests: values.guests,
+          date: values.date,
+          time: values.time,
+          location: values.location,
+        },
+      });
     },
   });
 
@@ -85,12 +92,7 @@ function BookingForm(props) {
           {...formik.getFieldProps("location")}
         >
           <label className="table-radio" htmlFor="indoors">
-            <input
-              type="radio"
-              id="indoors"
-              name="location"
-              value="Indoors"
-            />
+            <input type="radio" id="indoors" name="location" value="Indoors" />
             Indoors
           </label>
 
@@ -104,6 +106,9 @@ function BookingForm(props) {
             Outdoors
           </label>
         </div>
+        {formik.touched.location && formik.errors.location ? (
+          <div aria-label="invalidDate">{formik.errors.location}</div>
+        ) : null}
 
         <button
           className="custom-button"

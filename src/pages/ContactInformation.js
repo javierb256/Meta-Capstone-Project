@@ -1,18 +1,16 @@
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import { useState, useEffect } from "react";
-import GoBack from "./GoBack";
-import { useNavigate } from "react-router-dom";
-
-
+import { useLocation } from "react-router";
+import Summary from "../components/Summary";
+import GoBack from "../components/GoBack";
 
 function ContactInformation() {
+  const location = useLocation();
   const [occasion, setOccasion] = useState(false);
   const toggleOccasion = () => {
     setOccasion(!occasion);
   };
-  const navigate = useNavigate();
-
 
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -41,16 +39,14 @@ function ContactInformation() {
         .min(10, "Too short")
         .max(10, "Too long"),
     }),
-    onSubmit: values => {
-      navigate('/contact-information');
-    },
+    onSubmit: values => {},
   });
-
+// console.log(location.state.submitForm)
   return (
     <>
-      <GoBack page={'/booking'}/>
+      <GoBack page={"/booking"}/>
       <div className="contact-container container">
-        <h2>Contact Information</h2>
+        <h3>Contact Information</h3>
         <hr></hr>
 
         <form onSubmit={formik.handleSubmit}>
@@ -100,11 +96,18 @@ function ContactInformation() {
           {formik.touched.comment && formik.errors.comment ? (
             <div>{formik.errors.comment}</div>
           ) : null}
-          <button type="submit" disabled={!(formik.isValid && formik.dirty)}>
-            Payment Information
-          </button>
+          
         </form>
       </div>
+
+      <Summary
+        guests={location.state.guests}
+        time={location.state.time}
+        date={location.state.date}
+        location={location.state.location}
+      />
+
+      <button className="custom-button reserve-button" type="submit" disabled={!(formik.isValid && formik.dirty)}>Submit</button>
     </>
   );
 }
