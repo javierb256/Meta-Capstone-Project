@@ -1029,6 +1029,12 @@ img.star {
   font-family: var(--font-family-karla);
 }
 
+.final-confirmation {
+  text-decoration: none;
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-semi-bold);
+}
+
 
 /* Table Confirmation Component */
 

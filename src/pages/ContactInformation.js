@@ -49,7 +49,7 @@ function ContactInformation(props) {
         })}
         innerRef={formRef}
         onSubmit={values => {
-          alert(JSON.stringify(values, null, 2));
+          props.submitForm();
         }}
       >
         {formik => (
