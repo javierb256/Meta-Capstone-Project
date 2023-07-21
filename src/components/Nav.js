@@ -18,10 +18,10 @@ function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Menu</Link>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
             <Link to="/booking">Booking</Link>
@@ -43,7 +43,9 @@ function Nav() {
           >
             <div className="bar"></div>
           </button>
-          <img src={Logo} alt="Logo with yellow lemon" />
+          <Link to="/" onClick={isActive ? toggleName : null}>
+            <img src={Logo} alt="Logo with yellow lemon" />
+          </Link>
         </div>
         <nav className={isActive ? "navbar-menu is-active" : "navbar-menu"}>
           <Link to="/" onClick={toggleName}>
@@ -52,11 +54,11 @@ function Nav() {
           <Link to="/about" onClick={toggleName}>
             About
           </Link>
-          <Link to="/" onClick={toggleName}>
+          <Link to="/menu" onClick={toggleName}>
             Menu
           </Link>
-          <Link to="/reservations" onClick={toggleName}>
-            Reservations
+          <Link to="/booking" onClick={toggleName}>
+            Booking
           </Link>
           <Link to="/" onClick={toggleName}>
             Order Online

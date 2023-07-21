@@ -7,6 +7,8 @@ import BookingPage from "../pages/BookingPage";
 import Homepage from "../pages/Homepage";
 import ContactInformation from "../pages/ContactInformation";
 import BookingConfirmed from "../pages/BookingConfirmed";
+import About from "../pages/About";
+import Specials from "./Specials";
 
 export const updateTimes = (state, action) => {
   //The first action type would update the options to the entered times
@@ -34,6 +36,7 @@ function Main() {
       <Nav />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
+        <Route path="/about" element={<About />}></Route>
         <Route
           path="/booking"
           element={
@@ -45,6 +48,7 @@ function Main() {
           }
         ></Route>
         <Route path="/booking-confirmed" element={<BookingConfirmed />}></Route>
+        <Route path="menu" element={<Specials />}></Route>
         <Route
           path="/contact-information"
           element={<ContactInformation submitForm={submitForm} />}
