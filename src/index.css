@@ -1012,7 +1012,7 @@ img.star {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 6rem auto;
   padding-bottom: 2rem;
 }
 
