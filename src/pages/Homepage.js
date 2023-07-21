@@ -5,12 +5,11 @@ import Chicago from "../components/Chicago";
 function Homepage() {
   return (
     <>
-     <main>
-      <Specials />
-      <CustomersSay />
-      <Chicago />
-    </main>
-
+      <main>
+        <Specials />
+        <CustomersSay />
+        <Chicago />
+      </main>
     </>
   );
 }

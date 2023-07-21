@@ -1,8 +1,6 @@
 import Logo from "../assets/Logo .svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import Homepage from "../pages/Homepage";
-// import BookingPage from "../pages/BookingPage";
 
 function Nav() {
   const [isActive, setActive] = useState(false);

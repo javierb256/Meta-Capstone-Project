@@ -12,7 +12,7 @@ function Specials() {
           <button>Online Menu</button>
         </div>
         <div className="specials-cards">
-          <Card> 
+          <Card>
             <img
               src={GreekSalad}
               alt="Greek Salad dish"

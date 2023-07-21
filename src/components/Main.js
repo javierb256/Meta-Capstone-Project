@@ -44,13 +44,10 @@ function Main() {
             />
           }
         ></Route>
-        <Route
-          path="/booking-confirmed"
-          element={<BookingConfirmed />}
-        ></Route>
+        <Route path="/booking-confirmed" element={<BookingConfirmed />}></Route>
         <Route
           path="/contact-information"
-          element={<ContactInformation submitForm={submitForm}/>}
+          element={<ContactInformation submitForm={submitForm} />}
         ></Route>
       </Routes>
       <Footer />
