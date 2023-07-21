@@ -1,4 +1,5 @@
 import Logo from "../assets/green logo 2.png";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
@@ -7,22 +8,22 @@ function Footer() {
         <h3 className="section-title">Doormat Navigation</h3>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <a href="/">About</a>
+            <Link to={"/about"}>About</Link>
           </li>
           <li>
-            <a href="/">Menu</a>
+            <Link to={"/menu"}>Menu</Link>
           </li>
           <li>
-            <a href="/">Reservations</a>
+            <Link to={"/booking"}>Booking</Link>
           </li>
           <li>
-            <a href="/">Order Online</a>
+            <Link to={"/"}>Order Online</Link>
           </li>
           <li>
-            <a href="/">Login</a>
+            <Link to={"/"}>Login</Link>
           </li>
         </ul>
       </div>
@@ -30,13 +31,13 @@ function Footer() {
         <h3>Contact</h3>
         <ul>
           <li>
-            <a href="/">Address</a>
+            <Link to={"/"}>Address</Link>
           </li>
           <li>
-            <a href="/">Phone Number</a>
+            <Link to={"/"}>Phone Number</Link>
           </li>
           <li>
-            <a href="/">Email</a>
+            <Link to={"/"}>Email</Link>
           </li>
         </ul>
       </div>
@@ -44,13 +45,13 @@ function Footer() {
         <h3>Social Media Links</h3>
         <ul>
           <li>
-            <a href="/">Social 1</a>
+            <Link to={"/"}>Social 1</Link>
           </li>
           <li>
-            <a href="/">Social 2</a>
+            <Link to={"/"}>Social 2</Link>
           </li>
           <li>
-            <a href="/">Social 3</a>
+            <Link to={"/"}>Social 3</Link>
           </li>
         </ul>
       </div>

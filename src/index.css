@@ -366,21 +366,26 @@ input, select {
   margin-top: 15px;
 }
 
-.header-info button {
+.header-info .header-button {
   background: none;
   border: none;
   appearance: none;
   outline: none;
-  margin: 0 auto;
+  display: block;
   color: var(--highlight-black);
   background-color: var(--primary-yellow);
   border-radius: 11px;
   padding: 0.6rem 1.1rem;
-  margin-top: 1.3rem;
+  margin-top: 1.5rem;
   font-size: 1.2rem;
+  text-decoration: none;
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+  max-width: 60%;
 }
 
-.header-info button:hover {
+.header-button:hover {
   cursor: pointer;
   background-color: var(--secondary-tangerince);
 }
@@ -413,7 +418,7 @@ input, select {
   max-height: 200px;
 }
 
-.specials button {
+.specials-button {
   display: block;
   background: none;
   outline: none;
@@ -423,10 +428,15 @@ input, select {
   border-radius: 11px;
   padding: 0.6rem 2rem;
   margin-top: 1.3rem;
+  align-self: center;
   font-size: 1.2rem;
+  text-decoration: none;
+  font-family: var(--font-family-karla);
+  font-weight: var(--font-weight-semi-bold);
+  color: black;
 }
 
-.specials button:hover {
+.specials-button:hover {
   cursor: pointer;
   background-color: var(--secondary-tangerince);
 }
@@ -478,6 +488,10 @@ input, select {
 
 .specials-card-title span {
   color: var(--secondary-tangerince);
+}
+
+.orderDelivery{
+  border: none;
 }
 
 /* Specials */
@@ -1038,6 +1052,50 @@ img.star {
 
 /* Table Confirmation Component */
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+.about-container{
+  flex-wrap: wrap;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .about {
+    width: 100%;
+  }
+  .about-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-images {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2rem;
+    height: 100%;
+  }
+
+  .about-images img:first-child {
+    margin: 0;
+  }
+  .about-images img:last-child{
+    margin: 0;
+  }
+
+  .about-text {
+    width: 80%;
+    text-align: center;
+  }
+  .about-text h2{
+    text-align: center;
+  }
+
+}
+
 @media (min-width: 600px) {
   .footer {
     grid-template-columns: repeat(2, 1fr);
@@ -1227,15 +1285,28 @@ img.star {
   .header-container {
     width: 100%;
     flex-direction: column;
-    padding: 6rem 0;
+    padding: 3.5rem 0;
   }
 
   .header-info {
-    display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
+  }
+
+  .header-info > div {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header-info h2 {
+    text-align: center;
+  }
+
+  .header-info .header-button {
+    margin: 1rem auto;
+    width: 100%;
   }
 
   .specials-title h2 {
@@ -1255,7 +1326,7 @@ img.star {
   }
 
   .about-text h2 {
-    line-height: 0.6;
+    line-height: 0.7;
     margin-bottom: 15px;
     text-align: center;
   }
@@ -1273,6 +1344,7 @@ img.star {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    height: 100%;
   }
 
   .about-images img:first-child {
@@ -1348,8 +1420,20 @@ img.star {
 }
 
 @media (max-width: 420px) {
-  .specials-title h2 {
+  .header-img {
+    max-width: 230px;
+  }
+
+  .card-container {
+    max-width: 235px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
     line-height: 0.8;
+    font-size: 2rem;
   }
 
   .specials button {
@@ -1412,11 +1496,22 @@ img.star {
     max-width: 35px;
   }
   /* reservation Component */
+
+  .confirmation-container {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 700px) {
   button.orderDelivery {
     margin: 0;
     width: 100%;
+
+  }
+}
+
+@media (max-width: 300px) {
+  .confirmation-container {
+    max-width: 250px;
   }
 }

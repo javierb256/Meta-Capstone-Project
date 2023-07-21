@@ -2,6 +2,7 @@ import Card from "../components/Card";
 import GreekSalad from "../assets/greek salad.jpg";
 import Bruschetta from "../assets/bruchetta.svg";
 import LemonDessert from "../assets/lemon dessert.jpg";
+import { Link } from "react-router-dom";
 function Specials() {
   return (
     <>
@@ -9,7 +10,7 @@ function Specials() {
       <section className="specials">
         <div className="specials-title">
           <h2>This Weeks Specials!</h2>
-          <button>Online Menu</button>
+          <Link to={"/menu"} className="specials-button">Online Menu</Link>
         </div>
         <div className="specials-cards">
           <Card>

@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 function Header() {
   return (
-    <header className="main-header">
+    <header className="home-header">
       <div className="header-container">
         <div className="header-info">
           <h2>Little Lemon</h2>
@@ -10,7 +11,7 @@ function Header() {
             traditional recipes served with a modern twist.
           </p>
           <div>
-            <button>Reserve a Table</button>
+            <Link to={"/booking"} className="header-button">Reserve a Table</Link>
           </div>
         </div>
         <div className="header-img"></div>
