@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Little Lemon Capstone Project
+Final capstone project for the Meta Front-End Development course
+## Table of Contents
+* [Defining the Problem](#overview)
+* [Planning the UX and UI](#planning-the-ux-and-ui)
+    * [Creating a Wireframe](#creating-a-wireframe)
+    * [Final Design](#final-design)
+* [My Process](#my-process)
+    * [Built With](#built-with)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Defining the Problem
+The owners of the Little Lemon Restaurant have received negative feedback on the reserve a table function on the Little Lemon website. Users are confused about how to use it and are unhappy with how it looks and functions.
 
-### `npm start`
+From the booking page users should be able to:
+* Reach the booking page from the homepage or Navigation link
+* Select a date for their visit
+* Choose an available time from a list
+* Enter the number of guests 
+* Select the location of their table
+* Receive validation errors if:
+    * The date chosen was less than todays date
+    * Number of guests is less than 1
+    * Not every form field was answered
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+At the contact information page users should be able to:
+* Enter their name, phone number, and email
+* Select an occasion for their visit
+* Enter a comment for their reservation
+* Receive a confirmation that their table was reserved
+* Receive validation errors if:
+    * An invalid name was entered
+    * An invalid phone number was entered
+    * An invalid email was entered
+    * Not every form field was answered
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Planning the UX and UI
+### Creating a wireframe
+The first step taken was to create a starter wireframe for the various pages of the website as well as the components that go along with them. In this step emphasis is placed on designing the general design and flow of the components and pages for the website. No colors or images are used in this step. This is also the step to plan out the requirements given from the problem given as well as from the insight given by customer feedback at the start. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can view the entire wireframe figma file [here](https://www.figma.com/file/VbM3BbQzumuL97GXYsGxcZ/Capstone---Little-Lemon-Home-Page?type=design&node-id=5-129&mode=design&t=LDmlC7FwHMEoOtNb-0).
 
-### `npm run build`
+![Snapshot of the Little Lemon homepage wireframe](<src/assets/Figma Files/Little Lemon Home Page Wireframe.png>)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Final Design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The final design included choosing the correct font family, font weight and size for the text on the screen. Colors were used following the designated color schemes for the little lemon restaurant and making sure there was a an alternate mobile version when opening the page on smaller mobile devices. Several reusable components were created that represented the components that would be used in the final product. A prototype was created to emulate how the actual website would function and the flow between components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Little Lemon Hompage Snapshot](<src/assets/Little Lemon Homepage Snapshot.jpeg>)
 
-### `npm run eject`
+![Component design from figma file](<src/assets/Figma Files/Components.png>)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A link to the Final figma file can be found [here](https://www.figma.com/file/F57MNIYm7Wb30YVrEw2Byt/Capstone---Applying-Design-Fundamentals%2F-Prototype?type=design&node-id=339-609&mode=design&t=7ROLiOxixlKHa8LI-0).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## My Process
+### Built with 
+* Semantic HTML 5 markup
+* CSS custom properties
+* Javascript
+* Flexbox
+* Mobile responsiveness
+* [React](https://react.dev/) - JS library
+* [Flaticon](https://www.flaticon.com/) - icon library
+* [React Testing library](https://testing-library.com/)
+* [Day.js](https://day.js.org/) - parsing and validation library for dates and times
+*  [js-confetti](https://www.npmjs.com/package/js-confetti) - JS library to display confetti on screen
+* Yup - schema builder for value parsing and validation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
