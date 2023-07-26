@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Meta-Capstone-Project/static/css/main.594f05fe.css",
-    "main.js": "/Meta-Capstone-Project/static/js/main.e420a3ed.js",
+    "main.js": "/Meta-Capstone-Project/static/js/main.94e54ae3.js",
     "static/js/787.01cfcb08.chunk.js": "/Meta-Capstone-Project/static/js/787.01cfcb08.chunk.js",
     "static/media/Mario and Adrian A.jpg": "/Meta-Capstone-Project/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
     "static/media/Mario and Adrian b.jpg": "/Meta-Capstone-Project/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
@@ -20,11 +20,11 @@
     "static/media/dinner-table.png": "/Meta-Capstone-Project/static/media/dinner-table.4d6611468f9fcdac79ad.png",
     "index.html": "/Meta-Capstone-Project/index.html",
     "main.594f05fe.css.map": "/Meta-Capstone-Project/static/css/main.594f05fe.css.map",
-    "main.e420a3ed.js.map": "/Meta-Capstone-Project/static/js/main.e420a3ed.js.map",
+    "main.94e54ae3.js.map": "/Meta-Capstone-Project/static/js/main.94e54ae3.js.map",
     "787.01cfcb08.chunk.js.map": "/Meta-Capstone-Project/static/js/787.01cfcb08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.594f05fe.css",
-    "static/js/main.e420a3ed.js"
+    "static/js/main.94e54ae3.js"
   ]
 }
