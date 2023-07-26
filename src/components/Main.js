@@ -27,7 +27,7 @@ function Main() {
   // when form is submited will navigate to table confirmation when return value is true
   function submitForm(formData) {
     if (submitAPI(formData) === true) {
-      navigate("/Meta-Capstone-Project/booking-confirmed");
+      navigate("/booking-confirmed");
     }
   }
 
@@ -35,11 +35,10 @@ function Main() {
     <>
       <Nav />
       <Routes>
-        <Route path="/Meta-Capstone-Project" element={<Homepage />}></Route>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/Meta-Capstone-Project/about" element={<About />}></Route>
+        <Route path="/about" element={<About />}></Route>
         <Route
-          path="/Meta-Capstone-Project/booking"
+          path="/booking"
           element={
             <BookingPage
               time={availableTimes}
@@ -48,10 +47,10 @@ function Main() {
             />
           }
         ></Route>
-        <Route path="/Meta-Capstone-Project/booking-confirmed" element={<BookingConfirmed />}></Route>
-        <Route path="/Meta-Capstone-Project/menu" element={<Specials />}></Route>
+        <Route path="/booking-confirmed" element={<BookingConfirmed />}></Route>
+        <Route path="/menu" element={<Specials />}></Route>
         <Route
-          path="/Meta-Capstone-Project/contact-information"
+          path="/contact-information"
           element={<ContactInformation submitForm={submitForm} />}
         ></Route>
       </Routes>

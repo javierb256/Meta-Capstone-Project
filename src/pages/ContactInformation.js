@@ -29,7 +29,7 @@ function ContactInformation(props) {
 
   return (
     <>
-      <GoBack page={"/Meta-Capstone-Project/booking"} />
+      <GoBack page={"/booking"} />
       <Formik
         initialValues={{ name: "", phone: "", email: "", comment: "" }}
         validationSchema={Yup.object({

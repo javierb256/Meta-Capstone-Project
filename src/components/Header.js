@@ -11,7 +11,7 @@ function Header() {
             traditional recipes served with a modern twist.
           </p>
           <div>
-            <Link to={"/Meta-Capstone-Project/booking"} className="header-button">Reserve a Table</Link>
+            <Link to={"/booking"} className="header-button">Reserve a Table</Link>
           </div>
         </div>
         <div className="header-img"></div>

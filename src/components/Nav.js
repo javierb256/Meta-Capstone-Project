@@ -10,27 +10,27 @@ function Nav() {
   return (
     <>
       <nav className="navbar">
-        <Link to="/Meta-Capstone-Project" aria-label="Go to Homepage">
+        <Link to="/" aria-label="Go to Homepage">
           <img src={Logo} alt="Logo with yellow lemon"></img>
         </Link>
         <ul className="navbar-links">
           <li>
-            <Link to="/Meta-Capstone-Project">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/Meta-Capstone-Project/about">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/Meta-Capstone-Project/menu">Menu</Link>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <Link to="/Meta-Capstone-Project/booking">Booking</Link>
+            <Link to="/booking">Booking</Link>
           </li>
           <li>
-            <Link to="/Meta-Capstone-Project">Order Online</Link>
+            <Link to="/">Order Online</Link>
           </li>
           <li>
-            <Link to="/Meta-Capstone-Project">Log In</Link>
+            <Link to="/">Log In</Link>
           </li>
         </ul>
       </nav>
@@ -43,27 +43,27 @@ function Nav() {
           >
             <div className="bar"></div>
           </button>
-          <Link to="/Meta-Capstone-Project" onClick={isActive ? toggleName : null}>
+          <Link to="/" onClick={isActive ? toggleName : null}>
             <img src={Logo} alt="Logo with yellow lemon" />
           </Link>
         </div>
         <nav className={isActive ? "navbar-menu is-active" : "navbar-menu"}>
-          <Link to="/Meta-Capstone-Project" onClick={toggleName}>
+          <Link to="/" onClick={toggleName}>
             Home
           </Link>
-          <Link to="/Meta-Capstone-Project/about" onClick={toggleName}>
+          <Link to="/about" onClick={toggleName}>
             About
           </Link>
-          <Link to="/Meta-Capstone-Project/menu" onClick={toggleName}>
+          <Link to="/menu" onClick={toggleName}>
             Menu
           </Link>
-          <Link to="/Meta-Capstone-Project/booking" onClick={toggleName}>
+          <Link to="/booking" onClick={toggleName}>
             Booking
           </Link>
-          <Link to="/Meta-Capstone-Project" onClick={toggleName}>
+          <Link to="/" onClick={toggleName}>
             Order Online
           </Link>
-          <Link to="/Meta-Capstone-Project" onClick={toggleName}>
+          <Link to="/" onClick={toggleName}>
             Log In
           </Link>
         </nav>
