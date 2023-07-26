@@ -28,7 +28,7 @@ function BookingForm(props) {
       location: Yup.string().required("Please select a table location"),
     }),
     onSubmit: values => {
-      navigate("/contact-information", {
+      navigate("/Meta-Capstone-Project/contact-information", {
         state: {
           guests: values.guests,
           date: values.date,

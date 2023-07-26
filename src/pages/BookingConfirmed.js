@@ -13,7 +13,7 @@ function BookingConfirmed() {
         confirmation with your reservation details shortly. We are excited to
         see you soon!
       </p>
-      <Link to={"/booking"} className="custom-button final-confirmation">
+      <Link to={"/Meta-Capstone-Project/booking"} className="custom-button final-confirmation">
         Book Another Table
       </Link>
     </div>

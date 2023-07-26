@@ -10,7 +10,7 @@ function Specials() {
       <section className="specials">
         <div className="specials-title">
           <h2>This Weeks Specials!</h2>
-          <Link to={"/menu"} className="specials-button">Online Menu</Link>
+          <Link to={"/Meta-Capstone-Project/menu"} className="specials-button">Online Menu</Link>
         </div>
         <div className="specials-cards">
           <Card>
