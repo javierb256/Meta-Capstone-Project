@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Meta-Capstone-Project/static/css/main.594f05fe.css",
+    "main.js": "/Meta-Capstone-Project/static/js/main.e420a3ed.js",
+    "static/js/787.01cfcb08.chunk.js": "/Meta-Capstone-Project/static/js/787.01cfcb08.chunk.js",
+    "static/media/Mario and Adrian A.jpg": "/Meta-Capstone-Project/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
+    "static/media/Mario and Adrian b.jpg": "/Meta-Capstone-Project/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/bruchetta.svg": "/Meta-Capstone-Project/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek salad.jpg": "/Meta-Capstone-Project/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/Meta-Capstone-Project/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/restaurant.jpg": "/Meta-Capstone-Project/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/Woman 2.png": "/Meta-Capstone-Project/static/media/Woman 2.485bf93d8fa0b82aa488.png",
+    "static/media/Woman 1.png": "/Meta-Capstone-Project/static/media/Woman 1.968ca69e513632a16c71.png",
+    "static/media/Location.png": "/Meta-Capstone-Project/static/media/Location.290f5845528edfaec0c2.png",
+    "static/media/Guy 1.png": "/Meta-Capstone-Project/static/media/Guy 1.34b7fd503cb124f7c5fe.png",
+    "static/media/Guy 2.png": "/Meta-Capstone-Project/static/media/Guy 2.3b5ed86916210ef53929.png",
+    "static/media/Logo .svg": "/Meta-Capstone-Project/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
+    "static/media/group.png": "/Meta-Capstone-Project/static/media/group.c382724b45e6dbe267f1.png",
+    "static/media/clock.png": "/Meta-Capstone-Project/static/media/clock.45b0736b20ad251e6cdb.png",
+    "static/media/dinner-table.png": "/Meta-Capstone-Project/static/media/dinner-table.4d6611468f9fcdac79ad.png",
+    "index.html": "/Meta-Capstone-Project/index.html",
+    "main.594f05fe.css.map": "/Meta-Capstone-Project/static/css/main.594f05fe.css.map",
+    "main.e420a3ed.js.map": "/Meta-Capstone-Project/static/js/main.e420a3ed.js.map",
+    "787.01cfcb08.chunk.js.map": "/Meta-Capstone-Project/static/js/787.01cfcb08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.594f05fe.css",
+    "static/js/main.e420a3ed.js"
+  ]
+}
